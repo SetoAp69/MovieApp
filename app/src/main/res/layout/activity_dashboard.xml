@@ -64,13 +64,24 @@
         android:textSize="26dp"
         />
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_categories"
         android:layout_width="match_parent"
-        android:layout_height="32dpdp"
+        android:layout_height="32dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_categories"
         android:layout_marginHorizontal="29dp"
         android:layout_marginTop="15dp"
         tools:listitem="@layout/item_category"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_film"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rv_categories"
+        android:layout_marginHorizontal="29dp"
+        android:layout_marginTop="15dp"
+        tools:listitem="@layout/item_film"
         />
 
 
